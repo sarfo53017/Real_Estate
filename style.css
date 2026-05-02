@@ -2,44 +2,77 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: white;
+    height: 100vh;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-}
 
-.navbar a{
-    margin: 0 50px;
-    text-decoration: none;
-    color: aliceblue;
-    text-align: center;
-}
-
-.navbar nav{
-    margin: 20px 0;
-}
-
-.navbar span{
-    color: #107ab3;
-    font-size: larger;
-    
-}
-.container {
+.main-container{
+    overflow: hidden;
     background: linear-gradient(to right, #2d2b2b,rgb(20, 20, 20));
     color: aliceblue;
 }
+/* START OF THE NAVIGATION ITEMS STYLES */
+.nav-container{ 
+    display: flex;
+justify-content: center;
+    align-items: center;
+    margin: 0 20px
 
-.hero {
+;}
+.myLogo{
+  transform: translateX(-120px);
+}
+.nav-items{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 25px;
+   
+    
 }
+.nav-items li{
+    list-style: none;
+    padding: 5px 10px ;
+    margin: 0 20px;
 
-.hero img{
+   
+    
+}
+.nav-items li a {
+    gap: 4;
+    text-decoration: none;
+    color: rgb(214, 211, 211);
+    font-weight: thin;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+padding: 5px 10px;
+    
+    
+    
+}
+.nav-items li a:hover{
+color: white;
+font-weight: normal;
+}
+/* END OF THE NAVIGATION ITEMS STYLES */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.hero-img-container{
+    position: relative;
+    height: 100%;
+}
+.hero-img{
     margin: 0 0px;
-    width: 600px;
-    height: 650px;
+    width:450px;
+    /* height: 650px; */
+    transform: translateY(-100px );
+    transform: translateX(270px );
+    
+    
     
 }
 
@@ -47,6 +80,7 @@ body{
     margin: 0px;
     padding: 40px;
     font-size: 20px;
+
 }
 
 
@@ -78,21 +112,12 @@ body{
     height: 130px;
     background: linear-gradient(to right,#4c76b9,#05388a);
     position: absolute;
-    display: flex;
-    justify-content: space-around;
-    right: 10px;
-    top: 790px;
-    margin: 0;
+    bottom:40;
+    right: 0;
+    margin: 0; 
 }
 
-.logo {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    background: white;
-    
-    
-}
+
 
 .logo img{
     padding: 20px;
